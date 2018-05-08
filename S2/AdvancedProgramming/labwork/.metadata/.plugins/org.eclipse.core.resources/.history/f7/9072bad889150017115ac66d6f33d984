@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+
+/**
+ * @author User
+ *
+ */
+public class HandHeldDevice extends ElectronicDevice{
+	
+	int weight;
+
+	public HandHeldDevice(String manufacturer, int weight) {
+		super(manufacturer);
+		this.weight = weight;
+	}
+	
+	public String toString(){
+		return super.toString() + "Weight: " + weight;
+	}
+
+}

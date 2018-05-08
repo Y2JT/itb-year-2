@@ -1,0 +1,84 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ListResourceBundle;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+/**
+ * 
+ */
+
+/**
+ * @author Joseph Tierney
+ * @studentNo B00092923
+ * @date 15/03/2017
+ *
+ */
+public class Bundles extends ListResourceBundle implements ActionListener{
+
+	JFrame JFrame = new JFrame();
+	JLabel helloLabel = new JLabel("Hello");
+	JButton gerButton = new JButton("German");
+	JButton freButton = new JButton("French");
+	JButton espButton = new JButton("Spanish");
+	
+	public Bundles(){
+		frame();
+	}
+
+	public void frame() {
+		JFrame.add(helloLabel);
+		JFrame.add(gerButton);
+		JFrame.add(freButton);
+		JFrame.add(espButton);
+		
+		gerButton.addActionListener(this);
+		freButton.addActionListener(this);
+		espButton.addActionListener(this);
+		
+		JFrame.setTitle("Lab9Part2");
+		JFrame.setSize(375,150);
+		JFrame.setVisible(true);
+		JFrame.setLayout(null);
+		
+		helloLabel.setBounds(20,20,100,25);
+		gerButton.setBounds(20,50,100,25);
+		freButton.setBounds(130,50,100,25);
+		espButton.setBounds(240,50,100,25);
+		
+	}
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		new Bundles();
+
+	}
+
+	@Override
+	protected Object[][] getContents() {
+		return new Object[][]{
+				{"English", "Hello"},
+				{"German", "Hallo"},
+				{"French", "Bonjour"},
+				{"Spanish", "Hola"}
+		};
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if(e.getSource()==gerButton){
+			helloLabel.setText("Hallo");
+		}
+		if(e.getSource()==freButton){
+			helloLabel.setText("Bonjour");
+		}
+		if(e.getSource()==espButton){
+			helloLabel.setText("Hola");
+		}
+		
+	}
+}

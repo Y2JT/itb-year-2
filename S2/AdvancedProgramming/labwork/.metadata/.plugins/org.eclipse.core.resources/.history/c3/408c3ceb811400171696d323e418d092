@@ -1,0 +1,72 @@
+import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+/**
+ * 
+ */
+
+/**
+ * @author Joseph Tierney
+ *
+ */
+public class FormFrame extends JFrame{
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	JPanel myPanel;
+	JLabel nameLabel;
+	JTextField nameField;
+	JButton submitButton;
+	
+	public FormFrame(){
+		setTitle("Lab9Part4");
+		setSize(400,400);
+		setVisible(true);
+		myPanel.add(new RegisterPanel());
+	}//end FormFrame
+	
+	class RegisterPanel extends JPanel{
+
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
+		public RegisterPanel(){
+			nameLabel = new JLabel("Name: ");
+			nameField = new JTextField(20);
+			submitButton = new JButton("Submit");
+			//anonymous inner class
+			submitButton.addActionListener(new ActionListener(){
+				@Override
+				public void actionPerformed(ActionEvent e){
+					nameField.setText("Submit completed");
+					setTitle("Submit Completed!!!!");
+					nameField.setEnabled(false);
+				}//end actionPerformed
+			});//end anonymous inner class
+			add(nameLabel);
+			add(nameField);
+			add(submitButton, BorderLayout.SOUTH);
+			
+		}//end RegisterPanel
+		
+	}//end inner class
+	
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		new FormFrame();
+	}//end main
+
+}//end class

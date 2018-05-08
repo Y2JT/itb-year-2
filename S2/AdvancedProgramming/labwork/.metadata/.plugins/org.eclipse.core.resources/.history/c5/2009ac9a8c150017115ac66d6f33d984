@@ -1,0 +1,23 @@
+/**
+ * 
+ */
+
+/**
+ * @author User
+ *
+ */
+public class WalkieTalkie extends HandHeldDevice{
+	
+	private double rangeInKm;
+
+	public WalkieTalkie(String manufacturer, int weight, double rangeInKm) {
+		super(manufacturer, weight);
+		this.rangeInKm = rangeInKm;
+		// TODO Auto-generated constructor stub
+	}
+	
+	public String toString(){
+		return super.toString() + "Range in KM: " + rangeInKm;
+	}
+
+}

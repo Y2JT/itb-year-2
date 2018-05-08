@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+
+/**
+ * @author User
+ *
+ */
+public class GenericTestClass {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		GenericClassInfoProvider g1 = new GenericClassInfoProvider();
+		
+		System.out.println(g1.getSimpleClassName("Number: " + 1));
+
+	}
+
+}

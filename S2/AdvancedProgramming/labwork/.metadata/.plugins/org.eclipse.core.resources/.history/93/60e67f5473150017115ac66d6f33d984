@@ -1,0 +1,14 @@
+/**
+ * @author Joseph Tierney
+ * @studentNo B00092923
+ * @date 24/03/2017
+ *
+ */
+public interface Gun{
+	
+	String serialNumber = "";
+	
+	public abstract String getReloadInstructions();
+	
+	public String getSerialNumber();
+}

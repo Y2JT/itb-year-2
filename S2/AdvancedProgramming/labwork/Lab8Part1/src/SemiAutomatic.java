@@ -1,0 +1,30 @@
+/**
+ * @author Joseph Tierney
+ * @studentNo B00092923
+ * @date 24/03/2017
+ *
+ */
+public class SemiAutomatic implements Gun{
+	
+	String serialNumber;
+
+	public SemiAutomatic(String serialNumber){
+		this.serialNumber = serialNumber;
+	}
+	
+	public String getReloadInstructions(){
+		 String desc = "Reload for " + this.getClass().getName();
+		 String step1 = "Remove magazine";
+		 String step2 = "Pop bullets into magazine";
+		 String step3 = "Replace magazine"; 
+		 
+		 return desc + "\n" + step1 + "\n" + step2 + "\n" + step3; 
+	}
+
+	@Override
+	public String getSerialNumber() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

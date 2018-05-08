@@ -1,0 +1,23 @@
+{
+  "E:\\ITB\\Semester 2\\Advanced Programming\\labwork\\Lab1Part3\\src": {
+    "location": "E:\\ITB\\Semester 2\\Advanced Programming\\labwork\\Lab1Part3\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\ITB\\Semester 2\\Advanced Programming\\labwork\\Lab1Part3\\src\u0027. Skipped."
+  },
+  "E:\\ITB\\Semester 2\\Advanced Programming\\labwork\\Lab1Part2\\src": {
+    "location": "E:\\ITB\\Semester 2\\Advanced Programming\\labwork\\Lab1Part2\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\ITB\\Semester 2\\Advanced Programming\\labwork\\Lab1Part2\\src\u0027. Skipped."
+  },
+  "C:\\Program Files (x86)\\Java\\jre1.8.0_101\\lib\\rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "C:\\Program Files (x86)\\Java\\jre1.8.0_101\\lib\\rt.jar",
+    "status": "RESOLVED",
+    "error": "No class path info available for \u0027C:\\Program Files (x86)\\Java\\jre1.8.0_101\\lib\\rt.jar\u0027. Skipped."
+  },
+  "F:\\ITB\\Semester 2\\Advanced Programming\\labwork\\Lab6Part1\\src": {
+    "location": "F:\\ITB\\Semester 2\\Advanced Programming\\labwork\\Lab6Part1\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027F:\\ITB\\Semester 2\\Advanced Programming\\labwork\\Lab6Part1\\src\u0027. Skipped."
+  }
+}

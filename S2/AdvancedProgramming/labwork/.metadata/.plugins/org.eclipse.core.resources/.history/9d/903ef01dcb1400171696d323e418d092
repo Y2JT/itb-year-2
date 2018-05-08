@@ -1,0 +1,27 @@
+/**
+ * 
+ */
+
+/**
+ * @author Joseph Tierney
+ * @studentNo B00092923
+ * @date 17/03/2017
+ *
+ */
+public class BankAccount {
+	
+	int bal;
+	
+	public BankAccount(int bal){
+		this.bal = bal;
+	}//end constructor
+	
+	public synchronized void makeWithdrawl(int var){
+		bal = bal - var;
+	}
+	
+	public synchronized int getBalance (){
+        return bal;
+    }
+
+}//end class

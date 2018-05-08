@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+
+/**
+ * @author Joseph Tierney
+ * @studentNo B00092923
+ * @date 04/03/2017 
+ *
+ */
+public class Test {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		System.out.println(ShapeCalculations.getVolumeOfCylinder(5.1,3.2));
+		System.out.println(ShapeCalculations.getVolumeOfCube(6.7));
+		System.out.println(ShapeCalculations.getAreaOfSphere(1.22));
+	}//end main
+
+}//end class

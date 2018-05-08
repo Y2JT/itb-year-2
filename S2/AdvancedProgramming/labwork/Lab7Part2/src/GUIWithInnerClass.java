@@ -1,0 +1,62 @@
+import java.awt.Container;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+/**
+ * 
+ */
+
+/**
+ * @author Joseph Tierney
+ * @studentNo B00092923
+ * @date 08/03/2017
+ *
+ */
+public class GUIWithInnerClass extends JFrame{
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	JLabel myLabel;
+	JButton myButton;
+	
+	public GUIWithInnerClass(){
+		Container contentPane = getContentPane();
+		GridLayout gridlayout = new GridLayout(2,2);
+		contentPane.setLayout(gridlayout);
+		//create label and button
+		myLabel = new JLabel("Default Text");
+		myButton = new JButton("Change Text");
+		myButton.addActionListener(new ButtonResponder());
+		//add to content pane
+		contentPane.add(myLabel);
+		contentPane.add(myButton);
+		//set frame parameters
+		setTitle("Lab7Part2");
+		setSize(450,200);
+		setVisible(true);
+	}//end GUIWithInnerClass method
+	
+	//inner class definitions
+	class ButtonResponder implements ActionListener{
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			myLabel.setText("Outer class label set by inner class " + getClass().getName());
+		}//end actionPerformed method			
+	}//end ButtonResponder
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		new GUIWithInnerClass();
+	}//end main
+
+}//end class

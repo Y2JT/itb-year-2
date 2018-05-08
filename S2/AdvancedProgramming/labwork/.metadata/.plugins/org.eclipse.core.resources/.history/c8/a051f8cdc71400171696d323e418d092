@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+
+/**
+ * @author User
+ *
+ */
+public class GenericClassInfoProvider {
+	
+	public <T> String getSimpleClassName(T type){
+		
+		return type.getClass().getSimpleName();
+	}//end getSimpleClassName
+}//end class

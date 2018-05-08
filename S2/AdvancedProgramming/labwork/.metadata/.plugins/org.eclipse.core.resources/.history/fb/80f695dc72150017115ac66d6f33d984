@@ -1,0 +1,15 @@
+
+public class TestClass {
+	
+	public static void main(String[] args){
+		Gun peacemaker1 = new Revolver("B12345678");
+		Gun peacemaker2 = new SemiAutomatic("A12345678");
+		Cannon peacemaker3 = new Cannon("C12345678");
+		
+		System.out.println(peacemaker1.getReloadInstructions() + "\n");
+		System.out.println(peacemaker2.getReloadInstructions() + "\n");
+		System.out.println(((Gun) peacemaker3).getReloadInstructions() + "\n");
+		
+	}
+
+}

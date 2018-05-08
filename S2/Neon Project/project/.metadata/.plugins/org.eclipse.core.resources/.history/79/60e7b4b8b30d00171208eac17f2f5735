@@ -1,0 +1,104 @@
+package BooksForTots;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Book {
+	
+	private String BookTitle;
+	private String BookAuthor;
+	private String BookPublisher;
+	private String BookCondition;
+	private String BookReleaseDate;
+	private int BookID;
+	
+	private static int numBooks;
+	
+	private static List<Book> books = new ArrayList<Book>();
+	
+	public int getBookID() {
+		return BookID;
+	}
+	
+	public int getBookIDAtIndex(int index) {
+		int id = books.get(index).BookID;
+		return id;
+	}
+
+	public void setBookID(int bookID) {
+		BookID = bookID;
+	}
+
+	public String getBookTitle() {
+		return BookTitle;
+	}
+	
+	public String getBookTitleAtIndex(int index) {
+		String title = books.get(index).BookTitle;
+		return title;
+	}
+
+	public void setBookTitle(String bookTitle) {
+		BookTitle = bookTitle;
+	}
+
+	public String getBookAuthor() {
+		return BookAuthor;
+	}
+
+	public void setBookAuthor(String bookAuthor) {
+		BookAuthor = bookAuthor;
+	}
+
+	public String getBookPublisher() {
+		return BookPublisher;
+	}
+
+	public void setBookPublisher(String bookPublisher) {
+		BookPublisher = bookPublisher;
+	}
+
+	public String getBookCondition() {
+		return BookCondition;
+	}
+
+	public void setBookCondition(String bookCondition) {
+		BookCondition = bookCondition;
+	}
+
+	public String getBookReleaseDate() {
+		return BookReleaseDate;
+	}
+
+	public void setBookReleaseDate(String bookReleaseDate) {
+		BookReleaseDate = bookReleaseDate;
+	}
+	
+	public void addBook(Book book) {
+		Book.numBooks++;
+		books.add(book);
+	}
+	
+	public int getNumBooks() {
+		return numBooks;
+	}
+	
+	public void printBooks() {
+		for(int i = 0; i < books.toArray().length; i++) {
+			System.out.println(books.get(i).getBookTitle());
+		}
+	}
+	
+	public Book(int bookID, String bookTitle, String bookAuthor, String bookPublisher, String bookCondition, String bookReleaseDate) {
+		super();
+		BookTitle = bookTitle;
+		BookAuthor = bookAuthor;
+		BookPublisher = bookPublisher;
+		BookCondition = bookCondition;
+		BookReleaseDate = bookReleaseDate;
+		BookID = bookID;
+	}
+	
+	public Book(){
+	}
+}

@@ -1,0 +1,9 @@
+package BooksForTots;
+
+public class BooksForTots {
+
+	public static void main(String[] args) {
+		BooksForTotsGUI gui = new BooksForTotsGUI();
+	}
+
+}
